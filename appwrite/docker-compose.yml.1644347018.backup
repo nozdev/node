@@ -10,7 +10,7 @@ services:
       - --providers.docker=true
       - --providers.docker.exposedByDefault=false
       - --providers.docker.constraints=Label(`traefik.constraint-label-stack`,`appwrite`)
-      - --entrypoints.appwrite_web.address=:80
+      - --entrypoints.appwrite_web.address=:8080
       - --entrypoints.appwrite_websecure.address=:443
     restart: unless-stopped
     ports:
