@@ -16,6 +16,6 @@ github:
     addLabel: prebuilt-in-gitpod
 tasks:
   - init: |
-      echo 'TODO: build project'
+    echo 'TODO'
     command: |
-      echo 'TODO: start app'
+    docker-compose up -d --remove-orphans
