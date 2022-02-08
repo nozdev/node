@@ -7,10 +7,10 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks
 tasks:
-  - init: npm install
+  - init:       cd todo-with-svelte 
+                npm install
     command: |
       export HMR_HOST=`gp url 3000`
-      cd todo-with-svelte
       npm run dev
 github:
   prebuilds:
